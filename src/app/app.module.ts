@@ -11,6 +11,8 @@ import { NewsComponent } from './page/news/news.component';
 import { ConstComponent } from './page/const/const.component';
 import { BodyerComponent } from './public/bodyer/bodyer.component';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
@@ -35,7 +37,9 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [{
     provide: SWIPER_CONFIG,
