@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class HttpService {
-  URL = '';
+  URL = 'http://localhost:8080';
   constructor(private http: HttpClient) { }
 
   static dateFormat(date: Date, sFormat: String = 'yyyy-MM-dd') {
